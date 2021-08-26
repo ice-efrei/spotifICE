@@ -7,7 +7,7 @@ import RPi.GPIO as GPIO
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-from USERNAME import USERNAME
+from CONSTANT import USERNAME, TARGET_DEVICE
 
 scope = 'user-modify-playback-state user-read-playback-state app-remote-control user-read-currently-playing ' \
         'streaming ugc-image-upload '
@@ -16,8 +16,6 @@ initial_playlist = 'spotify:playlist:0vvXsWCC9xrXsKd4FyS8kM'
 
 GPIO_TRIGGER = 18
 GPIO_ECHO = 24
-
-TARGET_DEVICE = 'Redmi Note 7'
 
 
 def distance():

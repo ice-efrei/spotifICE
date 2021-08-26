@@ -1,5 +1,5 @@
 venv
 .idea
 .cache*
-USERNAME.py
+CONSTANT.py
 RPi
